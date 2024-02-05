@@ -96,8 +96,17 @@
 
 <script src="https://utteranc.es/client.js" repo="qinghongjiao/guestbook" issue-term="pathname" label="Comments" theme="github-light" crossorigin="anonymous" async="">
   </script>
-    <!-- Guestbook -->
+  <!-- javascript ip -->
+    <script type="application/javascript">
+  function getIP(json) {
+    document.write("IP: ", json.ip);
+  }
+</script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<!-- javascript ip -->
+  
   </div>
+    <!-- Guestbook -->
     <!-- link -->  
   </div>
  </div>
