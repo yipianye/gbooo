@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>实时显示时间</title>
+<script language="JavaScript">
+function showTime(){
+var now    = new Date();
+var hour   = now.getHours();
+var minute = now.getMinutes();
+var second = now.getSeconds();
+var timeValue = "";
+timeValue += ((hour < 10) ? "0" : "") + hour + ":";
+timeValue += ((minute < 10) ? "0" : "") + minute + ":";
+timeValue += ((second < 10) ? "0" : "") + second;
+document.getElementById("showTime").innerHTML = timeValue;
+setTimeout("showTime()",1000);
+}
+</script>
+</head>
+<body onload="showTime()">
+<p>当前时间为:</p>
+<pre id="showTime"></pre>
+</body>
+</html>
